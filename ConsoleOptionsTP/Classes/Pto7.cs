@@ -38,8 +38,8 @@ namespace ConsoleOptionsTP.Classes
         internal string BinaryOperation(int value)
         {
             Console.WriteLine("-7 en decimal   antes: " + Convert.ToString(value, toBase: 2).PadLeft(32, '0'));
-            Console.WriteLine("-7 en decimal despues: " + Convert.ToString(value >> 1, toBase: 2).PadLeft(32, '0'));
-            return Convert.ToString(value >> 1, toBase: 10);
+            Console.WriteLine("-7 en decimal despues: " + Convert.ToString(value >>> 1, toBase: 2).PadLeft(32, '0'));
+            return Convert.ToString(value >>> 1, toBase: 10);
         }
 
 
